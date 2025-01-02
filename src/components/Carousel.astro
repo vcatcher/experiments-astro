@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+
+import carousel1 from '../assets/carousel1.png';
+import carousel2 from '../assets/carousel2.png';
+import carousel3 from '../assets/carousel3.png';
+import carousel4 from '../assets/carousel4.png';
+---
+<div class="img-wrapper">
+    <div class="parent">
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <Image src={carousel1} class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <Image src={carousel2} class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <Image src={carousel3} class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <Image src={carousel4} class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+

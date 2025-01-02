@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+
+import iconig from '../assets/ig-icon-circle.png';
+import icontw from '../assets/tw-icon-circle.png';
+import iconfb from '../assets/fb-icon-circle.png';
+
+---
+<div class="footer">
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <h3> Address </h3>
+        <p class="footer-text">
+          3800 E Stevens Way NE, Seattle, WA 98195
+          <br>
+          lcl@seattlecommunitynetwork.org
+        </p>
+        <a href="https://www.instagram.com/seattlecommnet/"><Image class="logo" src={iconig}
+            alt="Instagram logo" /></a>
+        <a href="https://twitter.com/SeattleCommNet"><Image class="logo" src={icontw}
+            alt="twitter logo" /></a>
+        <a href="https://www.facebook.com/SeattleCommNet"><Image class="logo" src={iconfb}
+            alt="Facebook logo" /></a>
+        <br><br>
+      </div>
+
+      <div class="flex-item-left">
+        <h3> Mission </h3>
+        <p class="footer-text">
+          To facilitate community focused technology development and
+          research in support of low-income, marginalized populations
+          and groups.
+        </p>
+      </div>
+
+      <div class="flex-item-left">
+        <button onclick="location.href='https://discord.gg/gn4DKF83bP'" id="subscribe-button">
+          &nbsp; Join our Discord server &nbsp;
+        </button>
+        <br><br>
+        <button
+          onclick="location.href='https://groups.google.com/a/seattlecommunitynetwork.org/g/local-connectivity-lab/'"
+          id="subscribe-button">
+          Subscribe to Mailing List
+        </button>
+      </div>
+    </div>
+</div>

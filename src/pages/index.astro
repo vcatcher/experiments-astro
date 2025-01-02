@@ -1,0 +1,83 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Carousel from '../components/Carousel.astro';
+import citygraphic from '../assets/city-graphic.png';
+import partnerlogos from '../assets/partner-logos.png';
+---
+<Layout>
+  <Carousel />
+  <div class="img-wrapper">
+    <Image id="city-graphic" src={citygraphic} alt="image of buildings" />
+    <div class="overlay">
+      <button onclick="location.href='https://docs.seattlecommunitynetwork.org/community/join'" type="button"
+        id="get-involved-button">
+        Get Involved &rarr;
+      </button>
+    </div>
+  </div>
+  <!--about us section, tan background, -->
+  <div class="landing-tan" style="margin-top: 100px;">
+    <h2> Seattle Community Network </h2>
+    <p>
+      The Seattle Community Network (SCN) is a community-run cellular (4G LTE)
+      Internet access network dedicated to providing fair access to underserved
+      communities all across the Puget Sound.
+      <br><br>
+      Our project is firmly grounded in the principles of community empowerment.
+      The network is a participatory construction, where local residents and
+      institutions help each other in a collaborative and community-minded way.
+      <br><br>
+      To learn more, visit our
+      <a href="https://docs.seattlecommunitynetwork.org">docs site</a>,
+      read our most recent <a href="https://tinyurl.com/scn-blog-2">blog post</a>,
+      or follow us on social media @SeattleCommNet on Facebook, Twitter, LinkedIn,
+      and Instagram! Refer to our
+      <a href="https://tinyurl.com/SCNbrochureSPS5-4-22">brochure</a> or
+      <a href="https://tinyurl.com/SCNflyerSPS5-4-22">flyer</a>
+      for a printable version of our materials!
+    </p>
+    <button onclick="location.href='https://docs.seattlecommunitynetwork.org/'" type="button" id="learn-more-button">
+      About Us &rarr;
+    </button>
+  </div>
+
+  <!-- MAP GO HERE-->
+  <div>
+    <h2> Get Involved </h2>
+    <!--take breaks out later -->
+    <br><br>
+    <div class="flex-container">
+      <button onclick="location.href='https://docs.seattlecommunitynetwork.org/community/join'" type="button"
+        id="volunteer-learn-button">
+        Volunteer & Learn &rarr;
+      </button>
+
+      <button onclick="location.href='/oursites/'" type="button" id="get-connected-button">
+        Get Connected &rarr;
+      </button>
+    </div>
+    <br>
+  </div>
+
+  <!--CALENDAR OF UPCOMING EVENTS-->
+  <div>
+    <h2> Upcoming Events </h2>
+    <iframe id="calendar"
+      src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=Y19hMWhjOXVwMTBjOWs2YTNnNmYyb20zN2c2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0"></iframe>
+  </div>
+
+  <!-- PARTNER LOGOS -->
+  <div>
+    <h2> Our Partners </h2>
+    <p>
+      The Seattle Community Network is a collaboration between many local
+      organizations, sponsors, and collaborators throughout the Puget Sound
+      area.
+    </p>
+    <Image id="partners-image" src={partnerlogos} alt="partners logos">
+  </div>
+
+</Layout>
+
+
